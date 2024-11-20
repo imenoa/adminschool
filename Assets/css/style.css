@@ -1,0 +1,270 @@
+
+main {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#promos {
+    background-color: rgba(196, 222, 245, 0.496);
+    box-shadow: 0 4px 5px rgba(2, 7, 11, 0.814), 0 -4px 5px rgba(0, 4, 7, 0.814);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    width: 90vw;
+
+  
+    padding: 5%;
+ 
+    .infoPromo {
+        padding: 3%;
+        border-radius: 40px;
+        background-color: rgba(167, 189, 213, 0.571);
+        width: 33vw;
+        max-width: 300px;
+        max-height: 450px;
+        box-shadow: 0 4px 5px rgba(2, 7, 11, 0.814), 0 -4px 5px rgba(0, 4, 7, 0.814);
+        border: solid  rgba(154, 185, 214, 0.814);
+        font-family: "Crimson Pro", serif;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            text-transform: uppercase;
+            font-size: 30px;
+
+        }
+
+        div {
+            font-size: 25px;
+            padding: 2%;
+        }
+
+        .btnContainer {
+
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 5%;
+            width: 8vw;
+
+            button  {
+                background-color: rgba(255, 255, 255, 0.82);
+                padding: 10%;
+                border: none;
+                border-radius: 10px;
+                border: solid  rgba(154, 185, 214, 0.814);
+                cursor: pointer;
+                ion-icon {
+                    font-size: 25px;
+                    
+
+                }
+                
+            }
+            a {
+                background-color: rgba(255, 255, 255, 0.82);
+                justify-content: center;
+                padding: 10%;
+                border: none;
+                border-radius: 10px;
+                border: solid  rgba(154, 185, 214, 0.814);
+                cursor: pointer;
+                color: black;
+ 
+                ion-icon {
+                    font-size: 25px;
+                    
+                }
+        }
+
+    }
+
+
+
+}
+
+
+.addForm {
+    display: flex;
+flex-direction: column;
+gap: 30px;
+padding: 5%;
+padding-bottom: 10%;
+
+padding: 10%;
+
+
+    input {
+        font-family: "Crimson Pro", serif;
+        font-style: normal;
+        font-size: 20px;
+        padding: 5%;
+        background-color: rgba(238, 232, 232, 0.85);
+        box-shadow: 
+        inset -5px 0 5px rgba(0, 0, 0, 0.3),
+        inset 0 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+
+}
+.addContainer{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; 
+    gap: 50px;
+  
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+    border: none;
+    border-radius: 5px;
+    box-shadow:
+        inset -5px 0 5px rgba(0, 0, 0, 0.5),
+        inset 0 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background-color: white;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+    width:160px;
+    gap: 10px;
+    
+    ion-icon {
+        font-size: 25px;
+        color: rgb(138, 6, 6);
+       
+    }
+
+}
+
+}
+.editContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5%;
+    padding-bottom: 10%;
+
+
+    input {
+        font-family: "Crimson Pro", serif;
+        font-style: normal;
+        font-size: 20px;
+        padding: 2%;
+        background-color: rgba(209, 202, 202, 0.599);
+
+    }
+}
+
+.editbtncontainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 5%;
+
+
+    button {
+        padding: 2%;
+        border: none;
+        border-radius: 5px;
+        box-shadow:
+            inset -5px 0 5px rgba(0, 0, 0, 0.2),
+            inset 0 5px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+
+        ion-icon {
+            font-size: 25px;
+            color: rgb(15, 1, 1);
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        min-height: 25vh;
+
+        h1 {
+            top: 0.5%;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+
+                min-width: 150px;
+            }
+
+        }
+
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #promos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 50px;
+    }
+
+    .infoPromo {
+        flex-direction: column;
+        align-items: center;
+        min-width: 200px;
+
+        .btnContainer {
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+    }
+    
+    .addForm {
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+    }
+    .addContainer{
+        flex-direction: column;
+                align-items: center;
+    
+    }
+}
+
+}
+ 

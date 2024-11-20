@@ -1,0 +1,180 @@
+.StudentContainer {
+  background-color: rgba(196, 222, 245, 0.496);
+  padding: 5%;
+
+  .studentListContainer {
+    background-color: rgba(167, 189, 213, 0.571);
+    border: solid rgba(154, 185, 214, 0.814);
+    padding: 1%;
+
+    .studentList {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: black;
+      font-family: "Crimson Pro", serif;
+      font-style: normal;
+      font-size: 20px;
+      background-color: rgba(167, 189, 213, 0.571);
+      border: solid rgba(154, 185, 214, 0.814);
+      padding: 2%;
+
+      .studentDIV {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        width: 50vw;
+        font-size: 25px;
+
+        img {
+          width: 150px;
+          height: 200px;
+          object-fit: cover;
+
+        }
+
+        .studentInfo {
+          width: 30vw;
+          border-left: solid rgba(82, 111, 142, 0.814);
+          padding-left: 20px;
+        }
+
+      }
+
+      .studentBtnContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 5%;
+        width: 5vw;
+
+        button {
+          background-color: rgba(255, 255, 255, 0.82);
+          padding: 10%;
+          border: none;
+          border-radius: 10px;
+          border: solid rgba(154, 185, 214, 0.814);
+          cursor: pointer;
+
+          ion-icon {
+            font-size: 25px;
+
+
+          }
+
+        }
+
+
+      }
+    }
+  }
+}
+
+.editContainer {
+  display: flex;
+  justify-content: space-between;
+  
+.InputContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 5%;
+  padding-bottom: 10%;
+  width: 30vw;
+  input {
+    font-family: "Crimson Pro", serif;
+    font-style: normal;
+    font-size: 20px;
+    padding: 2%;
+    background-color: rgba(209, 202, 202, 0.599);
+
+}
+}
+ 
+}
+
+.editbtncontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 5%;
+  width: 5vw;
+
+  button {
+    background-color: rgba(255, 255, 255, 0.82);
+    padding: 10%;
+    border: none;
+    border-radius: 10px;
+    border: solid rgba(154, 185, 214, 0.814);
+    cursor: pointer;
+
+    ion-icon {
+      font-size: 25px;
+    }
+  }
+}
+
+.addForm {
+display: flex;
+flex-direction: column;
+gap: 30px;
+padding: 5%;
+
+
+  input {
+      font-family: "Crimson Pro", serif;
+      font-style: normal;
+      font-size: 20px;
+      padding: 2%;
+      background-color: rgba(238, 232, 232, 0.85);
+      box-shadow: 
+      inset -5px 0 5px rgba(0, 0, 0, 0.3),
+      inset 0 5px 5px rgba(0, 0, 0, 0.3);
+  }
+
+
+}
+.AddAvatar {
+width: 50vw;
+display: flex;
+flex-direction: column;
+font-size: 30px;
+}
+
+.addContainer{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end; 
+  gap: 50px;
+  
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow:
+      inset -5px 0 5px rgba(0, 0, 0, 0.5),
+      inset 0 5px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  background-color: white;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+  width:160px;
+  gap: 10px;
+  
+  ion-icon {
+      font-size: 25px;
+      color: rgb(138, 6, 6);
+     
+  }
+
+}
+}
+

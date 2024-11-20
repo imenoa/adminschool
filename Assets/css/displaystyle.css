@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: rgb(40, 45, 49);
+    font-family: "Crimson Pro", serif;
+    font-style: normal;
+}
+
+header {
+    background-color: rgba(200, 223, 244, 0.395);
+    display: flex;
+    height: 18vh;
+    max-height: 140px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom: solid rgba(154, 185, 214, 0.894);
+    box-shadow: 0px 5px 5px rgb(0, 0, 0);
+
+    p {
+        font-size: 25px;
+        padding-left: 30px;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 700;
+        font-style: normal;
+        padding-left: 50px;
+        font-size: 30px;
+
+    }
+}
+
+
+#addbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 25vw;
+    background-color: rgba(200, 223, 244, 0.664);
+    border: solid rgba(154, 185, 214, 0.814);
+    transition: 0.5s;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 25px;
+    padding: 1%;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 1), 0 4px 5px rgba(0, 0, 0, 1);
+    cursor: pointer;
+
+    ion-icon {
+        font-size: 30px;
+        color: rgb(138, 6, 6);
+    }
+}
+
+#addbtn:hover {
+    background-color: rgba(154, 173, 187, 0.597);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {}
