@@ -1,98 +1,120 @@
-.StudentContainer {
-  background-color: rgba(196, 222, 245, 0.496);
+main {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#Students{
+  background-color: rgba(65, 65, 66, 0.395);
+  box-shadow: 0 4px 5px rgba(2, 7, 11, 0.814), 0 -4px 5px rgba(0, 4, 7, 0.814);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  gap: 50px;
+  width: 90vw;
+  border: solid rgba(50, 204, 45, 0.894);
+  border-radius: 50px;
   padding: 5%;
+}
 
-  .studentListContainer {
-    background-color: rgba(167, 189, 213, 0.571);
-    border: solid rgba(154, 185, 214, 0.814);
-    padding: 1%;
+.studentList {
+  background-color: rgba(138, 138, 138, 0.616);
+  box-shadow: 0 4px 5px rgba(2, 7, 11, 0.814), 0 -4px 5px rgba(0, 4, 7, 0.814);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-family: "Crimson Pro", serif;
+  font-style: normal;
+  font-size: 20px;
+  box-shadow: 0 4px 5px rgba(2, 7, 11, 0.814), 0 -4px 5px rgba(0, 4, 7, 0.814);
+  border-radius: 20PX;
+  padding: 2%;
+  width: 90vw;
+}
 
-    .studentList {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: black;
-      font-family: "Crimson Pro", serif;
-      font-style: normal;
-      font-size: 20px;
-      background-color: rgba(167, 189, 213, 0.571);
-      border: solid rgba(154, 185, 214, 0.814);
-      padding: 2%;
+.studentDIV {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  font-size: 25px;
 
-      .studentDIV {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        align-items: center;
-        width: 50vw;
-        font-size: 25px;
+  img {
+    width: 15vw;
+    height: 20vh;
+    object-fit: cover;
 
-        img {
-          width: 150px;
-          height: 200px;
-          object-fit: cover;
-
-        }
-
-        .studentInfo {
-          width: 30vw;
-          border-left: solid rgba(82, 111, 142, 0.814);
-          padding-left: 20px;
-        }
-
-      }
-
-      .studentBtnContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-        padding: 5%;
-        width: 5vw;
-
-        button {
-          background-color: rgba(255, 255, 255, 0.82);
-          padding: 10%;
-          border: none;
-          border-radius: 10px;
-          border: solid rgba(154, 185, 214, 0.814);
-          cursor: pointer;
-
-          ion-icon {
-            font-size: 25px;
-
-
-          }
-
-        }
-
-
-      }
-    }
   }
 }
 
-.editContainer {
-  display: flex;
-  justify-content: space-between;
-  
-.InputContainer{
+.studentInfo {
+  width: 25vw;
+  border-left: solid rgba(55, 162, 55, 0.894);
+  padding-left: 20px;
+  background-color: rgba(226, 223, 223, 0.556);
+  box-shadow: 0 4px 5px rgba(2, 7, 11, 0.5), 0 -4px 5px rgba(0, 4, 7, 0.5);
+ 
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+
+.studentBtnContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 30px;
   padding: 5%;
-  padding-bottom: 10%;
-  width: 30vw;
-  input {
-    font-family: "Crimson Pro", serif;
-    font-style: normal;
-    font-size: 20px;
-    padding: 2%;
-    background-color: rgba(209, 202, 202, 0.599);
+  width: 5vw;
+
+  button {
+    background-color: rgba(255, 255, 255, 0.82);
+    padding: 10%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px rgba(2, 7, 11, 0.814), 0 -4px 5px rgba(0, 4, 7, 0.814);
+    cursor: pointer;
+
+    ion-icon {
+      font-size: 25px;
+      color: rgba(35, 140, 31, 0.894);
+
+    }
+
+  }
 
 }
-}
- 
+
+
+.editContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 5%;
+
+  .InputContainer {
+    background-color: rgba(242, 242, 242, 0.563);
+    box-shadow: 0 4px 5px rgba(2, 7, 11, 0.814), 0 -4px 5px rgba(0, 4, 7, 0.814);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 7%;
+    border-radius: 10px;
+
+    input {
+      font-family: "Crimson Pro", serif;
+      font-style: normal;
+      font-size: 22px;
+      padding: 2%;
+      background-color: rgba(255, 255, 255, 0.599);
+      margin: 0;
+    }
+  }
 }
 
 .editbtncontainer {
@@ -108,73 +130,282 @@
     padding: 10%;
     border: none;
     border-radius: 10px;
-    border: solid rgba(154, 185, 214, 0.814);
+    box-shadow: 0 4px 5px rgba(2, 7, 11, 0.814), 0 -4px 5px rgba(0, 4, 7, 0.814);
     cursor: pointer;
 
     ion-icon {
       font-size: 25px;
+      color: rgba(35, 140, 31, 0.894);
+
     }
   }
 }
 
 .addForm {
-display: flex;
-flex-direction: column;
-gap: 30px;
-padding: 5%;
+  background-color: rgba(242, 242, 242, 0.563);
+  box-shadow: 0 4px 5px rgba(2, 7, 11, 0.814), 0 -4px 5px rgba(0, 4, 7, 0.814);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3%;
+  border-radius: 30px;
+  gap: 30px;
 
 
   input {
-      font-family: "Crimson Pro", serif;
-      font-style: normal;
-      font-size: 20px;
-      padding: 2%;
-      background-color: rgba(238, 232, 232, 0.85);
-      box-shadow: 
+    font-family: "Crimson Pro", serif;
+    font-style: normal;
+    font-size: 25px;
+    padding: 2%;
+    background-color: rgba(238, 232, 232, 0.85);
+    box-shadow:
       inset -5px 0 5px rgba(0, 0, 0, 0.3),
       inset 0 5px 5px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    box-sizing: border-box;
   }
-
-
 }
+
 .AddAvatar {
-width: 50vw;
-display: flex;
-flex-direction: column;
-font-size: 30px;
+  width: 50vw;
+  gap: 10px;
+  font-size: 20px;
+  background-color: rgba(238, 232, 232, 0.85);
+  box-shadow:
+    inset -5px 0 5px rgba(0, 0, 0, 0.3),
+    inset 0 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.addContainer{
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end; 
-  gap: 50px;
-  
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  border: none;
+.inputAvatar {
+  display: none;
+}
+
+.AddAvatar::after {
+  content: "Choose a file";
+  display: inline-block;
+  background-color: #17ba0c;
+  color: white;
+  padding: 10px 20px;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
   box-shadow:
+    inset -5px 0 5px rgba(0, 0, 0, 0.3),
+    inset 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.AddAvatar:active::after {
+  background-color: #595e5a;
+}
+
+.file-name {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+
+
+.addContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 50px;
+  padding-top: 25px;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow:
       inset -5px 0 5px rgba(0, 0, 0, 0.5),
       inset 0 5px 5px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  background-color: white;
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 700;
-  font-style: normal;
-  width:160px;
-  gap: 10px;
-  
-  ion-icon {
+    cursor: pointer;
+    background-color: white;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 160px;
+    gap: 10px;
+
+    ion-icon {
       font-size: 25px;
-      color: rgb(138, 6, 6);
-     
+      color: rgb(6, 169, 39);
+
+
+    }
+
+  }
+}
+#retour {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky; 
+  top: 0px; 
+  margin-left: auto; 
+  width: 25vw;
+  background-color: rgba(247, 247, 247, 0.575);
+  border: 2px solid rgba(50, 204, 45, 0.894);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  font-size: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none; 
+  color: inherit; 
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+#retour:link, #retour:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+#addbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  width: 25vw;
+  background-color: rgba(247, 247, 247, 0.575);
+  border: solid rgba(50, 204, 45, 0.894);
+  transition: 0.5s;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-size: 15px;
+  padding: 1%;
+  text-transform: uppercase;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 1), 0 4px 5px rgba(0, 0, 0, 1);
+  cursor: pointer;
+
+  ion-icon {
+    font-size: 30px;
+    color: rgb(6, 169, 39);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #Students{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    padding: 10px;
   }
 
-}
-}
+ 
+  .studentListContainer,
+  .studentList,
+  .studentDIV,
+  .imgcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+  }
 
+  .imgcontainer {
+    justify-content: center;
+    height: 100%;
+
+    img {
+      min-width: 150PX;
+      min-height: 200px;
+      object-fit: cover;
+
+    }
+  }
+
+  .studentInfo {
+    min-width: 100%;
+  }
+
+  .studentBtnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      padding: 5%;
+    }
+  }
+
+
+
+  .editContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .InputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 5%;
+
+    input {
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px;
+      width: 100%;
+    }
+  }
+
+  .editbtncontainer {
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 80%;
+    height: auto;
+
+    button {
+      padding: 1%;
+    }
+  }
+    .addForm {
+      display: flex;
+      align-items: center !important;
+    }
+
+    .AddAvatar {
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      padding: 10px;
+    }
+
+    .addContainer {
+      flex-direction: column !important;
+      align-items: center;
+    }
+
+
+  
+  #addbtn {
+    min-width: 150px;
+    font-size: 20px;
+    width: 60%;
+  }
+}

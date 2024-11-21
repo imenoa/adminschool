@@ -1,38 +1,40 @@
 body {
     margin: 0;
-    background-color: rgb(40, 45, 49);
-    font-family: "Crimson Pro", serif;
-    font-style: normal;
+    background-color: rgb(86, 85, 85);
 }
 
 header {
-    background-color: rgba(200, 223, 244, 0.395);
+    background-color: rgba(253, 253, 255, 0.098);
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     height: 18vh;
     max-height: 140px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    border-bottom: solid rgba(154, 185, 214, 0.894);
+    border-bottom: solid rgba(50, 204, 45, 0.894);
     box-shadow: 0px 5px 5px rgb(0, 0, 0);
+    padding: 10px;
 
     p {
         font-size: 25px;
-        padding-left: 30px;
+        margin: 20px;
+        padding-left: 10px;
+        align-self: flex-start;
     }
 
     h1 {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-top: 0;
+        padding-left: 150px;
         font-family: "Cinzel Decorative", serif;
         font-weight: 700;
         font-style: normal;
-        padding-left: 50px;
-        font-size: 30px;
+        font-size: 1.5rem;
 
     }
 }
-
 
 #addbtn {
     display: flex;
@@ -41,12 +43,12 @@ header {
     position: sticky;
     top: 0;
     width: 25vw;
-    background-color: rgba(200, 223, 244, 0.664);
-    border: solid rgba(154, 185, 214, 0.814);
+    background-color: rgba(247, 247, 247, 0.575);
+    border: solid rgba(50, 204, 45, 0.894);
     transition: 0.5s;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    font-size: 25px;
+    font-size: 20px;
     padding: 1%;
     text-transform: uppercase;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 1), 0 4px 5px rgba(0, 0, 0, 1);
@@ -54,18 +56,42 @@ header {
 
     ion-icon {
         font-size: 30px;
-        color: rgb(138, 6, 6);
+        color: rgb(6, 169, 39);
     }
 }
 
 #addbtn:hover {
-    background-color: rgba(154, 173, 187, 0.597);
+    background-color: rgba(255, 255, 255, 0.597);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
 
 }
 
 
+@media screen and (max-width: 768px) {
+    header {
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 20%;
+        min-height: 100px;
+        padding: 10px;
+    }
 
 
+    header h1 {
+        font-size: 1.2rem;
+        margin: 0;
+        padding-left: 15px;
+        /* Légère marge pour décaler le texte */
+    }
+}
 
-@media screen and (max-width: 768px) {}
+
+#addbtn {
+    min-width: 150px;
+    font-size: 20px;
+   
+}
+
+
